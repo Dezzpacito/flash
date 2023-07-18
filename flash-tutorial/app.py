@@ -33,9 +33,6 @@ connection_string = "Driver={ODBC Driver 17 for SQL Server};Server=localhost;Dat
 # Creamos la tabla de usuarios si no existe
 conn = pyodbc.connect(connection_string)
 
-
-
-
 # Función para verificar si un usuario existe en la base de datos
 def user_exists(username, password):  
   try:  
